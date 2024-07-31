@@ -1,8 +1,8 @@
 import scapy.all as scapy 
 import time 
 
-target_ip = "172.17.153.45"
-gateway_ip = "172.17.160.1"
+target_ip = "172.17.153.45" #change this ip to your target ip
+gateway_ip = "172.17.160.1" #change this to your ip
 
 def get_mac(ip): 
     arp_request = scapy.ARP(pdst = ip) 
